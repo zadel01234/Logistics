@@ -1,0 +1,503 @@
+/* Reset and Base Styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(77, 20, 140, 0.8), rgba(77, 20, 140, 0.8)), url('../../assets/support-hero.avif') no-repeat center center/cover;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+}
+
+/* Search Support Section */
+.search-support {
+    padding: 1.5rem 0rem 0.5rem 0rem;
+    background-color: white;
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-box {
+    display: flex;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    z-index: 1;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 1rem 1rem 1rem 3rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-box button {
+    background-color: #4d148c;
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Quick Help Section */
+.quick-help {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.quick-help h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #4d148c;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.help-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.help-icon {
+    font-size: 2.5rem;
+    color: #4d148c;
+    margin-bottom: 1rem;
+}
+
+.help-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.help-card p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.help-link {
+    color: #4d148c;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.help-link i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.help-link:hover i {
+    transform: translateX(3px);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #4d148c;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+}
+
+.faq-categories h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.category-list {
+    list-style: none;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.category-item {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-item:hover {
+    background-color: #e9ecef;
+}
+
+.category-item.active {
+    background-color: #4d148c;
+    color: white;
+}
+
+.faq-search {
+    margin-bottom: 1.5rem;
+}
+
+.faq-search input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.faq-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.faq-question h4 {
+    margin: 0;
+    color: #333;
+}
+
+.faq-question i {
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+}
+
+.faq-item.active .faq-answer {
+    padding: 1.5rem;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #6c757d;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #4d148c;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: #4d148c;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-card p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+
+.contact-detail {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.contact-hours, .contact-note {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.2rem;
+}
+
+.contact-btn {
+    background-color: #4d148c;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+.contact-btn:hover {
+    background-color: #3a0f6b;
+}
+
+.contact-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contact-form-container h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / span 2;
+}
+
+.submit-btn {
+    background-color: #4d148c;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #3a0f6b;
+}
+
+/* Status Section */
+.status-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.status-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #4d148c;
+}
+
+.status-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.status-card {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #4d148c;
+}
+
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.status-header h3 {
+    color: #333;
+    margin: 0;
+}
+
+.status-indicator {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-indicator.active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-indicator.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-indicator:not(.active):not(.warning) {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+.status-card p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.status-link {
+    color: #4d148c;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.status-link i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.status-link:hover i {
+    transform: translateX(3px);
+}
+
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .faq-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-box input {
+        border-radius: 4px;
+        margin-bottom: 0.4rem;
+    }
+    
+    .search-box button {
+        border-radius: 4px;
+        padding: 1rem;
+    }
+    
+    .help-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 375px){
+    .search-container {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
