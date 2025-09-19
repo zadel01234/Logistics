@@ -46,7 +46,7 @@ const Shipping = () => {
     }
   });
   const [formErrors, setFormErrors] = useState({});
-  const [showModal, setShowModal] = useState(false);
+  const [showmodals, setShowmodals] = useState(false);
   const [trackingNumber, setTrackingNumber] = useState('');
 
   // Service selection
@@ -179,7 +179,7 @@ const Shipping = () => {
       // Generate random tracking number
       const newTrackingNumber = 'QS' + Math.floor(100000000 + Math.random() * 900000000);
       setTrackingNumber(newTrackingNumber);
-      setShowModal(true);
+      setShowmodals(true);
     } else {
       // If there are errors, go to the first step with errors
       if (Object.keys(step1Errors).length > 0) {
@@ -742,7 +742,7 @@ const Shipping = () => {
                 </div>
                 <div className="form-navigation">
                   <button type="button" className="prev-btn" onClick={prevStep}>← Previous</button>
-                  <button type="submit" className="submit-btn">Create Shipment</button>
+                  <button type="submit" className="submit-bt">Create Shipment</button>
                 </div>
               </div>
             </form>
@@ -750,26 +750,26 @@ const Shipping = () => {
         </div>
       </section>
 
-      {/* Confirmation Modal */}
-      {showModal && (
-        <div className="modal" id="confirmation-modal">
-          <div className="modal-content">
-            <div className="modal-header">
+      {/* Confirmation modals */}
+      {showmodals && (
+        <div className="modals" id="confirmation-modals">
+          <div className="modals-content">
+            <div className="modals-header">
               <h2>Shipment Created Successfully!</h2>
-              <span className="close-modal" onClick={() => setShowModal(false)}>&times;</span>
+              <span className="close-modals" onClick={() => setShowmodals(false)}>&times;</span>
             </div>
-            <div className="modal-body">
+            <div className="modals-body">
               <div className="confirmation-details">
                 <p>Your shipment has been processed successfully.</p>
                 <p>Your tracking number is: <strong id="tracking-number">{trackingNumber}</strong></p>
                 <p>You will receive a confirmation email shortly.</p>
               </div>
-              <div className="modal-actions">
+              <div className="modals-actions">
                 <button className="btn-primary" onClick={() => alert('Label printing functionality would be implemented here.')}>
                   Print Label
                 </button>
                 <button className="btn-secondary" onClick={() => {
-                  setShowModal(false);
+                  setShowmodals(false);
                   // Reset form
                   setFormData({
                     sender: { name: '', company: '', phone: '', email: '', address: '', city: '', state: '', zip: '' },
