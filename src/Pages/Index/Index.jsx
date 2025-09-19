@@ -34,7 +34,7 @@ const Index = () => {
       packageType === "envelope"
         ? 1
         : packageType === "small"
-        ? 1.2
+        ? 1.3
         : packageType === "medium"
         ? 1.5
         : 2;
