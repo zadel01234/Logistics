@@ -27,17 +27,17 @@ const Footer = () => {
             <ul>
               <li><Link to="/shipping">Shipping</Link></li>
               <li><Link to="/tracking">Tracking</Link></li>
-              <li><Link to="/pickup">Pickup</Link></li>
-              <li><Link to="/delivery">Delivery Options</Link></li>
+              <li><Link to="/locations">Pickup</Link></li>
+              <li><Link to="/shipping">Delivery Options</Link></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Support</h4>
             <ul>
-              <li><Link to="/contact">Contact Us</Link></li>
-              <li><Link to="/contact">Help Center</Link></li>
+              <li><Link to="/support">Contact Us</Link></li>
+              <li><Link to="/support">Help Center</Link></li>
               <li><Link to="Shipping">Shipping Rates</Link></li>
-              <li><Link to="/contact">Terms of Service</Link></li>
+              <li><Link to="/support">Terms of Service</Link></li>
             </ul>
           </div>
           <div className="footer-section">

@@ -288,19 +288,19 @@ const Support = () => {
             <div className="contact-form-container">
               <h3>Send us a Message</h3>
               <form id="support-form" onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="form-groups">
                   <label htmlFor="contact-name">Full Name</label>
                   <input id="contact-name" value={formData.name} onChange={handleFormChange} required />
                 </div>
-                <div className="form-group">
+                <div className="form-groups">
                   <label htmlFor="contact-email">Email Address</label>
                   <input type="email" id="contact-email" value={formData.email} onChange={handleFormChange} required />
                 </div>
-                <div className="form-group">
+                <div className="form-groups">
                   <label htmlFor="contact-phone">Phone Number (Optional)</label>
                   <input type="tel" id="contact-phone" value={formData.phone} onChange={handleFormChange} />
                 </div>
-                <div className="form-group">
+                <div className="form-groups">
                   <label htmlFor="contact-topic">Topic</label>
                   <select id="contact-topic" value={formData.topic} onChange={handleFormChange} required>
                     <option value="">Select a topic</option>
@@ -312,11 +312,11 @@ const Support = () => {
                     <option value="other">Other</option>
                   </select>
                 </div>
-                <div className="form-group">
+                <div className="form-groups">
                   <label htmlFor="contact-tracking">Tracking Number (If applicable)</label>
                   <input id="contact-tracking" value={formData.tracking} onChange={handleFormChange} />
                 </div>
-                <div className="form-group full-width">
+                <div className="form-groups full-width">
                   <label htmlFor="contact-message">Message</label>
                   <textarea id="contact-message" rows="5" value={formData.message} onChange={handleFormChange} required />
                 </div>

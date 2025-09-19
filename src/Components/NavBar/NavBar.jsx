@@ -85,6 +85,15 @@ const NavBar = () => {
         <ul className={`nav-menu ${isMobileMenuOpen ? "active" : ""}`}>
           <li className="nav-item">
             <Link
+              to="/"
+              className={`nav-link ${activeLink === "/" ? "active" : ""}`}
+              onClick={closeMobileMenu}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
               to="/tracking"
               className={`nav-link ${activeLink === "/tracking" ? "active" : ""}`}
               onClick={closeMobileMenu}
@@ -128,6 +137,7 @@ const NavBar = () => {
               Sign In
             </Link>
           </li>
+          
         </ul>
 
         {/* Hamburger */}

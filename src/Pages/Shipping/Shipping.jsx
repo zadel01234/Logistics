@@ -6,7 +6,7 @@ import {
   faTruck,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
-import './Shipping.css';
+
 import './Shipping.css';
 
 const Shipping = () => {

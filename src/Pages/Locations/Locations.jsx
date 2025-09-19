@@ -561,6 +561,7 @@ const sampleLocations = [
   },
 ];
 
+
 export default function Locations() {
   const [locations] = useState(sampleLocations);
   const [filtered, setFiltered] = useState(sampleLocations);
@@ -729,6 +730,9 @@ export default function Locations() {
       }
     );
   }
+  useEffect(() => {
+      document.title = "Locations | QuickShip Logistics "; // 👈 change tab title
+    }, []);
 
   return (
     <div>

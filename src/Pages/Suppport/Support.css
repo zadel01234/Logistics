@@ -334,27 +334,28 @@
     text-align: center;
 }
 
-.form-group {
+.form-groups {
     margin-bottom: 1rem;
 }
 
-.form-group label {
+.form-groups label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
-.form-group input, 
-.form-group select, 
-.form-group textarea {
+.form-groups input, 
+.form-groups select, 
+.form-groups textarea {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     font-size: 1rem;
+    color: black;
 }
 
-.form-group.full-width {
+.form-groups.full-width {
     grid-column: 1 / span 2;
 }
 
@@ -499,5 +500,9 @@
     .search-container {
         max-width: 350px;
         margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: transparent;
+        /* width: 90%; */
     }
 }
