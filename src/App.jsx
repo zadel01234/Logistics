@@ -129,6 +129,8 @@ import Shipping from "./Pages/Shipping/Shipping";
 import Support from "./Pages/Suppport/Support";
 import Locations from "./Pages/Locations/Locations";
 import Login from "./Pages/Login/Login";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+
 import "./App.css";
 
 function App() {
@@ -140,6 +142,7 @@ function App() {
   return (
     <>
       {!hideNavAndFooter && <NavBar />}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/shipping" element={<Shipping />} />
